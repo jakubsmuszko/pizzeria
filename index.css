@@ -77,6 +77,14 @@ body {
   color: #f8eee7;
   font-size: 60px;
 }
+
+@media only screen and (max-width: 600px) {
+  .about-header {
+    font-size: 52px;
+    padding: 0;
+  }
+}
+
 .about-info {
   text-align: left;
   font-size: 32px;
@@ -84,6 +92,13 @@ body {
   font-weight: normal;
   color: #f8eee7;
   width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-info {
+    font-size: 26px;
+    padding: 0;
+  }
 }
 
 hr {
@@ -103,6 +118,12 @@ hr {
   font-size: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+  .menu {
+    font-size: 16px;
+  }
+}
+
 .menu-header {
   color: black;
   font-size: 60px;
@@ -112,6 +133,13 @@ hr {
   flex-direction: row;
   justify-content: center;
 }
+@media only screen and (max-width: 600px) {
+  .menu-header {
+    font-size: 52px;
+    padding: 0;
+  }
+}
+
 .size-header {
   display: flex;
   font-family: "Open Sans", sans-serif;
@@ -152,14 +180,32 @@ hr {
   font-size: 26px;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+  .pizza-name {
+    font-size: 20px;
+  }
+}
 .price {
   float: right;
   font-size: 26px;
 }
 
+@media only screen and (max-width: 600px) {
+  .price {
+    font-size: 20px;
+  }
+}
+
 .description {
   font-size: 18px;
   font-weight: normal;
+}
+
+@media only screen and (max-width: 600px) {
+  .description {
+    font-size: 14px;
+  }
 }
 
 li > p {
@@ -220,6 +266,13 @@ nav > ul > li:hover {
 .drinks-header {
   font-size: 60px;
 }
+
+@media only screen and (max-width: 600px) {
+  .drinks-header {
+    font-size: 52px;
+    padding: 0;
+  }
+}
 .drinks {
   text-align: left;
   color: #f8eee7;
@@ -233,8 +286,22 @@ nav > ul > li:hover {
   margin: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+  .drinks {
+    font-size: 26px;
+    padding: 0;
+  }
+}
+
 .reviews-header {
   font-size: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+  .reviews-header {
+    font-size: 52px;
+    padding: 0;
+  }
 }
 
 .reviews {
@@ -250,7 +317,6 @@ nav > ul > li:hover {
 
 .review1 {
   text-align: left;
-  font-family: "Open Sans", sans-serif;
   color: #0e0002;
   width: 30%;
 }
@@ -291,10 +357,6 @@ nav > ul > li:hover {
   }
 }
 
-#gallery {
-  color: #bcb6ae;
-}
-
 .gallery-header {
   font-size: 60px;
   color: #f8eee7;
@@ -302,6 +364,13 @@ nav > ul > li:hover {
   width: 100%;
   flex-direction: row;
   justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery-header {
+    font-size: 52px;
+    padding: 0;
+  }
 }
 
 .gallery {
