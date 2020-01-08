@@ -1,0 +1,410 @@
+html,
+body {
+  margin: 0;
+  background-color: #0e0002;
+  scroll-behavior: smooth;
+}
+
+.courgette {
+  font-family: "Courgette", cursive;
+}
+
+.open {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.7px;
+}
+
+.yeseva {
+  font-family: "Yeseva One", cursive;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1 100%;
+  justify-content: center;
+}
+.container {
+  background: url("pizza4.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.wine-cont {
+  background: url("wines.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 30vh;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.coverText {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #f8eee7;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+  margin: 0 auto;
+  padding-left: 100px;
+}
+.about-header {
+  display: flex;
+  justify-content: flex-start;
+  color: #f8eee7;
+  font-size: 60px;
+}
+.about-info {
+  text-align: left;
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  color: #f8eee7;
+  width: 30%;
+}
+
+hr {
+  width: 30%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  visibility: hidden;
+  border-color: none;
+}
+
+.menu {
+  color: black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #f8eee7;
+  font-size: 20px;
+}
+
+.menu-header {
+  color: black;
+  font-size: 60px;
+  display: flex;
+  width: 100%;
+  padding: 50px;
+  flex-direction: row;
+  justify-content: center;
+}
+.size-header {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  width: 50%;
+  letter-spacing: 0.7px;
+  text-align: justify;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu-pizza {
+  display: flex;
+  flex-flow: row wrap;
+  width: 70%;
+  justify-content: center;
+  font-size: 20px;
+  background-color: #f8eee7;
+  padding-bottom: 100px;
+}
+
+.pizza {
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 25px;
+
+  color: black;
+}
+.menu-item {
+  display: block;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pizza-name {
+  text-decoration: underline;
+  float: left;
+  font-size: 26px;
+  font-weight: bold;
+}
+.price {
+  float: right;
+  font-size: 26px;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+li > p {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  width: 100%;
+  background-color: rgba(14, 0, 2, 0.3);
+  flex-flow: row wrap;
+  z-index: 1;
+  font-size: 1.2em;
+  position: fixed;
+  top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-nav {
+    font-size: 0.8em;
+    padding: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+nav > ul {
+  display: flex;
+}
+
+nav > ul > li {
+  padding-right: 10px;
+  list-style: none;
+  /* font-size: 20px; */
+}
+
+nav > ul > li:hover {
+  cursor: pointer;
+}
+
+.drinks-cont {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+
+/* @media only screen and (max-width: 600px) {
+  .drinks-cont {
+    justify-content: center;
+  }
+} */
+.drinks-header {
+  font-size: 60px;
+}
+.drinks {
+  text-align: left;
+  color: #f8eee7;
+  /* display: flex; */
+  align-items: flex-end;
+  flex-flow: column wrap;
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  width: 30%;
+  margin: 15px;
+}
+
+.reviews-header {
+  font-size: 60px;
+}
+
+.reviews {
+  color: #0e0002;
+  background-color: #f8eee7;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+  margin: 0 auto;
+  padding-left: 100px;
+}
+
+.review1 {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  color: #0e0002;
+  width: 30%;
+}
+
+@media (max-width: 575.98px) {
+  .drinks,
+  .about-info,
+  .review1 {
+    width: 100%;
+  }
+}
+@media (max-width: 768.98px) and (min-width: 576px) {
+  .drinks,
+  .about-info,
+  .review1 {
+    width: 80%;
+  }
+}
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .drinks,
+  .about-info,
+  .review1 {
+    width: 60%;
+  }
+}
+@media (max-width: 1199.98px) and (min-width: 992px) {
+  .drinks,
+  .about-info,
+  .review1 {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .drinks,
+  .about-info,
+  .review1 {
+    width: 30%%;
+  }
+}
+
+#gallery {
+  color: #bcb6ae;
+}
+
+.gallery-header {
+  font-size: 60px;
+  color: #f8eee7;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gallery {
+  padding: 25px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.gallery-img {
+  max-width: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery-img:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+@media (max-width: 575.98px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 768.98px) and (min-width: 576px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1199.98px) and (min-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  color: #0e0002;
+  background-color: #f8eee7;
+  font-weight: bold;
+}
+
+@media (max-width: 575.98px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+input,
+textarea {
+  width: 300px;
+  box-sizing: border-box;
+  margin: 5px;
+  font-size: 20px;
+}
+textarea {
+  vertical-align: top;
+  resize: none;
+}
+
+.submit {
+  background-color: #0e0002;
+  color: #f8eee7;
+  border-color: #0e0002;
+  border-radius: 5px;
+}
+.submit:hover {
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  width: 100%;
+  max-height: 50px;
+  flex-flow: row wrap;
+  font-size: 0.7em;
+  background-color: rgba(14, 0, 2, 0.3);
+  color: white;
+  opacity: 0.8;
+}
+
+.footer > ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+.footer > ul > li {
+  padding-left: 10px;
+}
+.footer > ul > li:hover {
+  cursor: pointer;
+}
